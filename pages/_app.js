@@ -9,7 +9,7 @@ import { Provider } from 'react-redux';
 import createEmotionCache from '../Muisrc/cretaeEmotionCache';
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();
-import { store } from '../Redux/store';
+import { store } from '../redux/store';
 export default function MyApp(props) {
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
 

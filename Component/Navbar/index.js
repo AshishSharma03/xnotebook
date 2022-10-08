@@ -5,7 +5,7 @@ import LibraryBooksIcon from '@mui/icons-material/LibraryBooks';
 import { query,addDoc,collection, doc,getDocFromCache,getDocs, collectionGroup } from 'firebase/firestore';
 import { db } from '../../database/firebase';
 import { useDispatch, useSelector } from 'react-redux';
-import { AddUser } from '../../Redux/user/UserSlice';
+import { AddUser } from '../../redux/user/UserSlice';
 
 function Navbar() {
     const [SwitchAc, setSwitchAc] = useState(false);
